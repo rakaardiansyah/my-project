@@ -1,3 +1,11 @@
+ion-toolbar {
+    width: 100%;
+    --background: #0EA99B;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
 ion-title{
     font-size: 16px;
 }
@@ -18,4 +26,28 @@ ion-col{
 button {
     background: #fff ;
     height: 30px;
+}
+
+ion-content{
+    --background: #f0f0f2;
+    .upperBox{
+        background-color: #fff ;
+        box-shadow: rgb(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        height: auto;
+        margin-bottom: 10px;
+        padding: 20px;
+        ion-avatar {
+            width: 70px;
+            height: 70px;
+        }
+        h2{
+            font-size: 20px;
+            color:black;
+        }
+        h3{
+            font-size: 20px;
+            color:black;
+            padding: 10px;
+        }
+    }
 }
