@@ -12,4 +12,8 @@ export class ProfilesayaPage implements OnInit {
   ngOnInit() {
   }
 
+  reset() {
+
+  }
+
 }

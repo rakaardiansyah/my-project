@@ -13,19 +13,19 @@ export class Tab4Page {
   ) { }
 
   profilesaya() {
-    this.router.navigateByUrl("./profilesaya");
+    this.router.navigateByUrl("/profilesaya");
   }
 
   daftartransaksi() {
-    this.router.navigateByUrl("./daftartransaksi");
+    this.router.navigateByUrl("/daftartransaksi");
   }
 
   referralfee() {
-    this.router.navigateByUrl("./referralfee");
+    this.router.navigateByUrl("/referralfee");
   }
 
   fasilitasmembership() {
-    this.router.navigateByUrl("./fasilitasmembership");
+    this.router.navigateByUrl("/fasilitasmembership");
   }
 
 }
