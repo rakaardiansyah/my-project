@@ -6,7 +6,23 @@ const routes: Routes = [
   {
     path: '',
     component: Tab4Page,
+  },  {
+    path: 'profilesaya',
+    loadChildren: () => import('./profilesaya/profilesaya.module').then( m => m.ProfilesayaPageModule)
+  },
+  {
+    path: 'daftartransaksi',
+    loadChildren: () => import('./daftartransaksi/daftartransaksi.module').then( m => m.DaftartransaksiPageModule)
+  },
+  {
+    path: 'referralfee',
+    loadChildren: () => import('./referralfee/referralfee.module').then( m => m.ReferralfeePageModule)
+  },
+  {
+    path: 'fasilitasmembership',
+    loadChildren: () => import('./fasilitasmembership/fasilitasmembership.module').then( m => m.FasilitasmembershipPageModule)
   }
+
 ];
 
 @NgModule({

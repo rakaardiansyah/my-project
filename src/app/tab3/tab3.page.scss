@@ -7,7 +7,7 @@ ion-toolbar {
 }
 
 ion-title {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 ion-chip {
@@ -24,20 +24,6 @@ ion-col{
 }
 
 button {
-    background-color: #E3E1B8;
-    padding: 2px 4px;
-    font: 13px sans-serif;
-    text-decoration: none;
-    border: 1px solid #000;
-    border-color: #aaa #444 #444 #aaa;
-    color: #000
-}
-
-ion-content{
-    --background: #f0f0f2;
-    .upperBox{
-        background-color: #fff ;
-        height: auto;
-        padding: 17px 20px;
-    }
+    background: #fff ;
+    height: 30px;
 }

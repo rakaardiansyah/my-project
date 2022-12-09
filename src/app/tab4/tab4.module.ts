@@ -6,6 +6,9 @@ import { Tab4Page } from './tab4.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
 import { Tab4PageRoutingModule } from './tab4-routing.module';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @NgModule({
   imports: [
@@ -17,4 +20,14 @@ import { Tab4PageRoutingModule } from './tab4-routing.module';
   ],
   declarations: [Tab4Page]
 })
-export class Tab4PageModule {}
+export class Tab4PageModule {
+
+  constructor(
+    public router : Router
+  ) { }
+
+  page4() {
+    this.router.navigateByUrl('/page1')
+  }
+
+}

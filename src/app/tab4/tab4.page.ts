@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tab4',
@@ -7,6 +8,24 @@ import { Component } from '@angular/core';
 })
 export class Tab4Page {
 
-  constructor() {}
+  constructor(
+    public router : Router
+  ) { }
+
+  profilesaya() {
+    this.router.navigateByUrl("./profilesaya");
+  }
+
+  daftartransaksi() {
+    this.router.navigateByUrl("./daftartransaksi");
+  }
+
+  referralfee() {
+    this.router.navigateByUrl("./referralfee");
+  }
+
+  fasilitasmembership() {
+    this.router.navigateByUrl("./fasilitasmembership");
+  }
 
 }

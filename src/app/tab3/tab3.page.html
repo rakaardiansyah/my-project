@@ -4,78 +4,12 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div class="upperBox">
-    <ion-label position="floating">Nama Lengkap</ion-label>
-    <ion-input  type="text"
-                placeholder="Nama Lengkap"
-                name="name"
-                required="name"></ion-input>
-  </div>
-  <div class="upperBox">
-    <ion-label position="floating">No KTP</ion-label>
-    <ion-input  type="number"
-                placeholder="Nomer KTP"
-                name="noktp"
-                required="noktp"></ion-input>
-  </div>
-  <div class="upperBox">
-    <ion-label position="floating">No HP/WA</ion-label>
-    <ion-input  type="number"
-                placeholder="Nomer HP / Whatsapp"
-                name="nohpwa"
-                required="nohpwa"></ion-input>
-  </div>
-  <div class="upperBox">
-    <ion-label position="floating">Jenis Kelamin</ion-label>
-    <ion-input  type="text"
-                placeholder="Jenis Kelamin"
-                name="jenkel"
-                required="jenkel"></ion-input>
-  </div>
-  <div class="upperBox">
-    <ion-label position="floating">Nama Perusahaan</ion-label>
-    <ion-input  type="text"
-                placeholder="Nama Perusahaan"
-                name="namapt"
-                required="namapt"></ion-input>
-  </div>
-  <div class="upperBox">
-    <ion-label position="floating">Alamat Email</ion-label>
-    <ion-input  type="email"
-                placeholder="Alamat Email"
-                name="email"
-                required="email"></ion-input>
-  </div>
-  <div class="upperBox">
-    <ion-label position="floating">Nomer Rekening</ion-label>
-    <ion-input  type="number"
-                placeholder="Nomer Rekening"
-                name="norek"
-                required="norek"></ion-input>
-  </div>
-  <div class="upperBox">
-    <ion-label position="floating">Nama Bank</ion-label>
-    <ion-input  type="text"
-                placeholder="Nama Bank"
-                name="namabank"
-                required="namabank"></ion-input>
-  </div>
-  <div class="upperBox">
-    <ion-label position="floating">Atas Nama</ion-label>
-    <ion-input  type="text"
-                placeholder="Atas Nama"
-                name="atasnama"
-                required="atasnama"></ion-input>
-  </div>
-  <div class="upperBox">
-    <ion-row>
-      <ion-col>
-        <ion-button class="button" expand="block">Edit</ion-button>
-      </ion-col>
-      <ion-col>
-        <ion-button class="button" expand="block">Batal</ion-button>
-      </ion-col>
-    </ion-row>
-  </div>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 3</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <app-explore-container name="Tab 3 page"></app-explore-container>
 </ion-content>
