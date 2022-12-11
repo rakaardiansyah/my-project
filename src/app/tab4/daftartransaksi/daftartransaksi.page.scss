@@ -1,8 +1,18 @@
-ion-toolbar {
-    width: 100%;
+ion-header {
     --background: #0EA99B;
     color: #fff;
-    font-size: 20px
+    ion-icon {
+        font-size: 30px;
+        position: relative;
+        margin-right: 10px;
+    }
+    #filter-outline{
+        position: absolute;
+        top: 5px;
+        right: 25px;
+        color:#fff;
+        z-index: 111;
+    }
 }
 
 ion-title {
