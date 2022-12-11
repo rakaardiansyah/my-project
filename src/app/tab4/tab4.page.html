@@ -5,37 +5,58 @@
 </ion-header>
 
 <ion-content>
-  <div class="upperBox">
-    <ion-item>
-      <ion-avatar slot="start">
-        <img class="account-image" src="../../assets/account.png" alt="Raka Ardiansyah">
-      </ion-avatar>
-      <ion-label>
-        <h2>Raka Ardiansyah</h2>
-        <p>raka.ardiansyah23@gmail.com</p>
-        <p>083813187473</p>
-      </ion-label>
-    </ion-item>
+  <div class="top">
+    <div class="image">
+      <img src="../../assets/account.png">
+    </div>
+    <div class="desc">
+      <h3>Raka Ardiansyah</h3>
+      <p>rakaard@gmail.com</p>
+      <p>083813187473</p>
+    </div>
+    <div class="edit">
+      <ion-button color="primary">Edit</ion-button>
+    </div>
   </div>
   <div class="upperBox">
-    <ion-item>
-      <h3 (click)="profilesaya()" color="secondary">Profile Saya</h3>
-    </ion-item>
-    <ion-item>
-      <h3 (click)="daftartransaksi()" color="secondary">Daftar Transaksi</h3>
-    </ion-item>
-    <ion-item>
-      <h3 (click)="referralfee()" color="secondary">Referral Fee</h3>
-    </ion-item>
-    <ion-item>
-      <h3 (click)="fasilitasmembership()" color="secondary">Fasilitas Membership</h3>
-    </ion-item>
-    <ion-item>
-      <h3>Syarat & Ketentuan</h3>
-    </ion-item>
-    <ion-item>
-      <h3>FAQ</h3>
-    </ion-item>
+    <ion-list>
+      <ion-item>
+        <img src="../../assets/icon/account/Lainnya.png">
+        <label (click)="profilesaya()" color="secondary">Profile Saya</label>
+        <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+      </ion-item>
+
+      <ion-item>
+        <img src="../../assets/icon/account/Lainnya.png">
+        <label (click)="daftartransaksi()" color="secondary">Daftar Transaksi</label>
+        <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+      </ion-item>
+
+      <ion-item>
+        <img src="../../assets/icon/account/Lainnya.png">
+        <label (click)="referralfee()" color="secondary">Referral Fee</label>
+        <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+      </ion-item>
+
+      <ion-item>
+        <img src="../../assets/icon/account/Lainnya.png">
+        <label (click)="fasilitasmembership()" color="secondary">Fasilitas Membership</label>
+        <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+      </ion-item>
+
+      <ion-item>
+        <img src="../../assets/icon/account/Lainnya.png">
+        <label>Syarat & Ketentuan</label>
+        <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+      </ion-item>
+
+      <ion-item>
+        <img src="../../assets/icon/account/Lainnya.png">
+        <label>FAQ</label>
+        <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+      </ion-item>
+
+    </ion-list>
   </div>
 </ion-content>
 
