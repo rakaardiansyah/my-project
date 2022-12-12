@@ -83,7 +83,8 @@ ion-content{
         .menu {
             // grid-area: menu;
             margin-right: 2px;
-            // justify-self: center;
+            justify-self: right;
+            align-items: center;
         }
     }
 }
