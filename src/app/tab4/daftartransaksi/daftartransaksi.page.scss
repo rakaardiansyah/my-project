@@ -43,10 +43,58 @@ button {
 }
 
 ion-content{
+    font-family: 'Poppins', sans-serif;
     --background: #f0f0f2;
     .upperBox{
-        background-color: #fff ;
+        margin-top: 10px;
+        box-shadow: rgba(0,0,0,0.15) 1.95px 1.95px 2.6px ;
         height: auto;
-        padding: 17px 20px;
+
+        .top-title{
+            display: grid;
+            grid-template-columns: 30% 45% 25%;
+            grid-template-rows: 1fr 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+            "image desc edit"
+            "image desc edit";
+            justify-items: center;
+            align-items: center;
+            .image{
+                grid-area: image;
+                img {
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+            .title{
+                grid-area: desc;
+                justify-self: start;
+                h3{
+                    color: #0EA99B;
+                }
+                p{
+                    color: gray;
+                    margin-top:-10px;
+                }
+            }
+            .desc{
+                border-radius: 4px;
+                grid-area: edit;
+                padding: 5px;
+                ion-card-subtitle{
+                    color: #353434;
+                }
+                ion-label{
+                    color: #353434;
+                }
+                ion-button{
+                    --border-radius:20px;
+                }
+            }
+        }
     }
+
+
 }
