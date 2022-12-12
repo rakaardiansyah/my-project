@@ -35,8 +35,10 @@ ion-content{
         background-color: white;
         box-shadow: rgba(0,0,0,0.15) 1.95px 1.95px 2.6px;
         height: 150px;
+        left: 10px;
+        right: 10px;
         display: grid;
-        grid-template-columns: 30% 45% 25%;
+        grid-template-columns: 25% 50% 27%;
         grid-template-rows: 1fr 1fr;
         gap: 0px 0px;
         grid-auto-flow: row;
@@ -48,8 +50,8 @@ ion-content{
         .image{
             grid-area: image;
             img {
-                width: 80px;
-                height: 80px;
+                width: 72px;
+                height: 72px;
                 border-radius: 50%;
             }
         }

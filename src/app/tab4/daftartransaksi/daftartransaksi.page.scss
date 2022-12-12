@@ -67,17 +67,19 @@ ion-content{
             grid-area: desc;
             justify-self: start;
             h3{
-                color: #0EA99B;
+                color: #363636;
             }
             p{
-                color: gray;
+                color: #363636;
                 margin-top:-10px;
             }
         }
+
         .desc{
             border-radius: 4px;
             grid-area: edit;
         }
+
         .menu {
             // grid-area: menu;
             margin-right: 2px;
