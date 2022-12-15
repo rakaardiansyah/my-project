@@ -45,6 +45,7 @@ button {
 ion-content{
     font-family: 'Poppins', sans-serif;
     background-color: white;
+    //DI PERBAIKI KODINGAN DI SINI AGAR LEBIH RAPIH ALURNYA TERKAIT CARDVIEW
     .top-title{
         display: grid;
         grid-template-columns: 30% 45% 25%;
@@ -86,6 +87,14 @@ ion-content{
             justify-self: right;
             align-items: center;
         }
+    }
+}
+
+.container {
+    padding: 6px 20px;
+    color: #ffffff;
+    ion-item {
+        background: rgba(255,255,255,.1 );
     }
 }
 
