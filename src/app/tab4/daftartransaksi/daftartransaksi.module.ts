@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -17,4 +17,13 @@ import { DaftartransaksiPage } from './daftartransaksi.page';
   ],
   declarations: [DaftartransaksiPage]
 })
-export class DaftartransaksiPageModule {}
+
+
+export class DaftartransaksiPageModule
+{
+  customPopoverOptions = {
+    header: 'Hair Color',
+    subHeader: 'Select your hair color',
+    message: 'Only select your dominant hair color',
+  };
+}

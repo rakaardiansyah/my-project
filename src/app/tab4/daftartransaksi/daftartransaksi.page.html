@@ -5,14 +5,53 @@
       defaultHref="search-chef"></ion-back-button>
     </ion-buttons>
     <ion-title>Daftar Transaksi</ion-title>
-    <ion-icon name="filter-outline" slot="end"></ion-icon>
+    <!-- <ion-icon name="filter-outline" slot="end"></ion-icon> -->
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
-  <ion-card style="border-radius: 7px;">
+  <ion-card>
+    <ion-card-header>
+      <ion-title>Filter</ion-title>
+    </ion-card-header>
+    <ion-grid>
+      <ion-row class="ion-align-center">
+        <ion-col size="4">
+          <ion-item>
+            <ion-label>Semua Status</ion-label>
+            <ion-select  interface="popover" placeholder="Status">
+              <ion-select-option value="Proses">Proses</ion-select-option>
+              <ion-select-option value="BelumBayar">Belum Bayar</ion-select-option>
+              <ion-select-option value="Batal">Batal</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+        <ion-col size="4">
+          <ion-item>
+            <ion-label>Semua Produk</ion-label>
+            <ion-select  interface="popover" placeholder="Semua Produk">
+              <ion-select-option value="Haji">Haji</ion-select-option>
+              <ion-select-option value="Umrah">Umrah</ion-select-option>
+              <ion-select-option value="Qurban">Qurban</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+        <ion-col size="4">
+          <ion-item>
+            <ion-label>Semua Tanggal</ion-label>
+            <ion-select  interface="popover" placeholder="Select One">
+              <ion-select-option value="Week1">Week 1</ion-select-option>
+              <ion-select-option value="Week2">Week 2</ion-select-option>
+              <ion-select-option value="Week3">Week 3</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
 
+  <ion-card>
     <ion-grid>
       <ion-row class="ion-align-center">
         <ion-col size="3">
@@ -38,33 +77,8 @@
       </ion-row>
     </ion-grid>
 
-    <!-- <div class="container">
-      <ion-item lines="none">
-        <ion-grid>
-          <ion-row class="ion-align-center">
-            <ion-col size="3">
-              <div class="image">
-                <img src="../../assets/icon-hajitravel/Altrama-Tour.png">
-              </div>
-            </ion-col>
-            <ion-col size="7">
-              <ion-label>
-                <h4>Altrama Tour</h4>
-                <h6>20 April 2020</h6>
-              </ion-label>
-            </ion-col>
-            <ion-col size="2">
-              <ion-button color="light" fill="clear">
-                <ion-icon slot="icon-only" name="ellipsis-vertical-outline"></ion-icon>
-              </ion-button>
-            </ion-col>
-          </ion-row>
-        </ion-grid>
-      </ion-item>
-    </div> -->
-
-    <ion-item lines="none">
-      <img src="../../assets/image-thumnails/Untitle_1.jpg">
+    <ion-item>
+      <ion-img src="../../assets/image-thumnails/Untitle_1.jpg"></ion-img>
     </ion-item>
 
     <ion-item lines="none">
@@ -88,24 +102,34 @@
     </ion-footer>
   </ion-card>
 
-  <ion-card style="border-radius: 7px;">
-    <div class="top-title">
-      <div class="image">
-        <img src="../../assets/icon-hajitravel/Nur-Hamdalah.png">
-      </div>
-      <div class="title">
-        <ion-card-title>Nur Hamdalah</ion-card-title>
-        <ion-label>12 Maret 2020</ion-label>
-      </div>
-    </div>
+  <ion-card>
+    <ion-grid>
+      <ion-row class="ion-align-center">
+        <ion-col size="3">
+          <div class="image">
+            <img src="../../assets/icon-hajitravel/Nur-Hamdalah.png">
+          </div>
+        </ion-col>
+        <ion-col size="7">
+          <ion-card-title>
+            <h4>Altrama Tour</h4>
+          </ion-card-title>
+          <ion-card-subtitle>
+            20 April 2020
+          </ion-card-subtitle>
+        </ion-col>
+        <ion-col size="2">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
 
-    <ion-item lines="none">
+    <ion-item>
       <img src="../../assets/image-thumnails/Untitled_5.jpg">
     </ion-item>
 
     <ion-item lines="none">
       <ion-card-subtitle>
-        Jl. Raya Kotabumi No.13 RT.08/4 Menteng Jaya Jakarta Pusat
+        Jl. Raya Kotabumi2 No.13 RT.08/4 Menteng Jaya Jakarta Pusat
       </ion-card-subtitle>
     </ion-item>
 
@@ -117,6 +141,49 @@
     <ion-footer class="footer">
       <ion-card-title>Proses</ion-card-title>
     </ion-footer>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-grid>
+        <ion-row class="ion-align-center">
+          <ion-col size="3">
+            <div class="image">
+              <img src="../../assets/icon-hajitravel/Nur-Hamdalah.png">
+            </div>
+          </ion-col>
+          <ion-col size="7">
+            <ion-card-title>
+              <h4>Altrama Tour</h4>
+            </ion-card-title>
+            <ion-card-subtitle>
+              20 April 2020
+            </ion-card-subtitle>
+          </ion-col>
+          <ion-col size="2">
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-item>
+        <img src="../../assets/image-thumnails/Untitled_5.jpg">
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-card-subtitle>
+          Jl. Raya Kotabumi2 No.13 RT.08/4 Menteng Jaya Jakarta Pusat
+        </ion-card-subtitle>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-icon name="cash-outline" slot="start"></ion-icon>
+        <ion-label>IDR 18.450.000</ion-label>
+      </ion-item>
+
+      <ion-footer class="footer">
+        <ion-card-title>Proses</ion-card-title>
+      </ion-footer>
+    </ion-card-header>
   </ion-card>
 
 </ion-content>

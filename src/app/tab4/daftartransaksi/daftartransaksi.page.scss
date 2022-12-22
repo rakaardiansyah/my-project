@@ -1,5 +1,5 @@
 ion-header {
-    --background: #0EA99B;
+    --background: var(--ion-color-primary);
     color: #fff;
     ion-icon {
         font-size: 30px;
@@ -15,93 +15,91 @@ ion-header {
     }
 }
 
-ion-title {
-    font-size: 18px;
-}
+.ion-content{
 
-ion-chip {
-    margin-left: 0;
-}
-
-ion-label{
-    font-size: 14px;
-}
-
-ion-col{
-    text-align: center;
-    align-items: center;
-}
-
-button {
-    background-color: #E3E1B8;
-    padding: 2px 4px;
-    font: 13px sans-serif;
-    text-decoration: none;
-    border: 1px solid #000;
-    border-color: #aaa #444 #444 #aaa;
-    color: #000
-}
-
-ion-content{
     font-family: 'Poppins', sans-serif;
-    background-color: white;
-    //DI PERBAIKI KODINGAN DI SINI AGAR LEBIH RAPIH ALURNYA TERKAIT CARDVIEW
-    .top-title{
-        display: grid;
-        grid-template-columns: 30% 45% 25%;
-        grid-template-rows: 1fr 1fr;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-        "image desc edit"
-        "image desc edit";
-        justify-items: center;
+    --background: var(--ion-col or-primary);
+
+      ion-card-title {
+        --color: var(--ion-color-primary);
+        font-weight: bold;
+      }
+
+      ion-card-subtitle {
+        --color: var(--ion-color-primary);
+      }
+
+      /* iOS places the subtitle above the title */
+      ion-card-header.ios {
+        display: flex;
+        flex-flow: column-reverse;
+      }
+
+    ion-img{
+        width: 100%;
+        text-align: center;
+    }
+
+    ion-title {
+        font-size: 18px;
+    }
+
+    ion-card-title{
+        font-weight: bold;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        .h1{
+            font-size: 21px;
+        }
+        .h2{
+            font-size: 18px;
+        }
+        .h3{
+            font-size: 15px;
+        }
+        .h4{
+
+            font-size: 12px;
+        }
+    }
+
+    ion-chip {
+        margin-left: 0;
+    }
+
+    ion-label{
+        font-size: 14px;
+        color: #fff;
+    }
+
+    ion-col{
+        text-align: center;
         align-items: center;
-        .image{
-            grid-area: image;
-            img {
-                width: 70px;
-                height: 70px;
-            }
-        }
-        .title{
-            grid-area: desc;
-            justify-self: start;
-            h3{
-                color: #363636;
-            }
-            p{
-                color: #363636;
-                margin-top:-10px;
-            }
-        }
+    }
 
-        .desc{
-            border-radius: 4px;
-            grid-area: edit;
-        }
-
-        .menu {
-            // grid-area: menu;
-            margin-right: 2px;
-            justify-self: right;
-            align-items: center;
-        }
+    ion-button {
+        font-weight: 700;
     }
 }
 
 .container {
     padding: 6px 20px;
     color: #ffffff;
-    ion-item {
-        background: rgba(255,255,255,.1 );
-    }
 }
 
 .footer{
+    text-align: center;
     background-color: #F8AD3E;
     padding: 10px;
-    height: auto;
-    color: white;
-    text-align: center;
-  }
+
+    .ion-card-title{
+        font-weight: bold;
+        text-align: center;
+        color:#fff;
+    }
+
+    .ion-label{
+        text-align: center;
+        color:#fff;
+    }
+}
