@@ -22,8 +22,8 @@ import { DaftartransaksiPage } from './daftartransaksi.page';
 export class DaftartransaksiPageModule
 {
   customPopoverOptions = {
-    header: 'Hair Color',
-    subHeader: 'Select your hair color',
-    message: 'Only select your dominant hair color',
+    header: 'Daftar Transaksi',
+    subHeader: 'Select your Transaction',
+    message: 'Only select your transaction',
   };
 }

@@ -13,14 +13,14 @@
 
   <ion-card>
     <ion-card-header>
-      <ion-title>Filter</ion-title>
+      <h3>Filter</h3>
     </ion-card-header>
     <ion-grid>
       <ion-row class="ion-align-center">
         <ion-col size="4">
           <ion-item>
             <ion-label>Semua Status</ion-label>
-            <ion-select  interface="popover" placeholder="Status">
+            <ion-select interface="popover" placeholder="Status">
               <ion-select-option value="Proses">Proses</ion-select-option>
               <ion-select-option value="BelumBayar">Belum Bayar</ion-select-option>
               <ion-select-option value="Batal">Batal</ion-select-option>
@@ -30,7 +30,7 @@
         <ion-col size="4">
           <ion-item>
             <ion-label>Semua Produk</ion-label>
-            <ion-select  interface="popover" placeholder="Semua Produk">
+            <ion-select interface="popover" placeholder="Semua Produk">
               <ion-select-option value="Haji">Haji</ion-select-option>
               <ion-select-option value="Umrah">Umrah</ion-select-option>
               <ion-select-option value="Qurban">Qurban</ion-select-option>
@@ -56,7 +56,7 @@
       <ion-row class="ion-align-center">
         <ion-col size="3">
           <div class="image">
-            <img src="../../assets/icon-hajitravel/Altrama-Tour.png">
+            <img src="../../assets/image-travel/Altrama-Tour.png">
           </div>
         </ion-col>
         <ion-col size="7">
@@ -70,7 +70,11 @@
         <ion-col size="2">
           <div class="menu">
             <h3>
-              <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+              <ion-buttons slot="end">
+                <ion-button (click)="_openPopover($event)">
+                  <ion-icon slot="icon-only" name="ellipsis-vertical-outline"></ion-icon>
+                </ion-button>
+              </ion-buttons>
             </h3>
           </div>
         </ion-col>
@@ -107,7 +111,7 @@
       <ion-row class="ion-align-center">
         <ion-col size="3">
           <div class="image">
-            <img src="../../assets/icon-hajitravel/Nur-Hamdalah.png">
+            <img src="../../assets/image-travel/Nur-Hamdalah.png">
           </div>
         </ion-col>
         <ion-col size="7">
@@ -149,7 +153,7 @@
         <ion-row class="ion-align-center">
           <ion-col size="3">
             <div class="image">
-              <img src="../../assets/icon-hajitravel/Nur-Hamdalah.png">
+              <img src="../../assets/image-travel/Nur-Hamdalah.png">
             </div>
           </ion-col>
           <ion-col size="7">
