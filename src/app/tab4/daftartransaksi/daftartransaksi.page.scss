@@ -1,3 +1,28 @@
+ion-toolbar {
+    width: 100%;
+    --background: var(--ion-color-primary);
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
+ion-title {
+    font-size: 18px;
+}
+
+ion-chip {
+    margin-left: 0;
+}
+
+ion-label{
+    font-size: 14px;
+}
+
+ion-col{
+    text-align: center;
+    align-items: center;
+}
+
 ion-header {
     --background: var(--ion-color-primary);
     color: #fff;
@@ -16,71 +41,95 @@ ion-header {
 }
 
 .ion-content{
-
     font-family: 'Poppins', sans-serif;
     --background: var(--ion-col or-primary);
 
-      ion-card-title {
-        --color: var(--ion-color-primary);
-        font-weight: bold;
-      }
-
-      ion-card-subtitle {
-        --color: var(--ion-color-primary);
-      }
-
-      /* iOS places the subtitle above the title */
-      ion-card-header.ios {
-        display: flex;
-        flex-flow: column-reverse;
-      }
-
-    ion-img{
-        width: 100%;
-        text-align: center;
-    }
-
-    ion-title {
-        font-size: 18px;
-    }
-
-    ion-card-title{
-        font-weight: bold;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        .h1{
-            font-size: 21px;
+    ion-card{
+        margin: 10px;
+        ion-grid{
+            text-align: center;
+            justify-content: center;
+            display: flex;
         }
-        .h2{
-            font-size: 18px;
-        }
-        .h3{
-            font-size: 15px;
-        }
-        .h4{
-
-            font-size: 12px;
+        .titleFilters{
+            margin-top: 8px;
+            margin-bottom: 8px;
+            h1, h2, h3, h4, h5, h6 {
+                font-weight: bold;
+            }
         }
     }
 
-    ion-chip {
-        margin-left: 0;
-    }
 
-    ion-label{
-        font-size: 14px;
-        color: #fff;
-    }
-
-    ion-col{
-        text-align: center;
-        align-items: center;
-    }
-
-    ion-button {
-        font-weight: 700;
-    }
 }
+
+
+// .ion-content{
+
+//     font-family: 'Poppins', sans-serif;
+//     --background: var(--ion-col or-primary);
+
+//       ion-card-title {
+//         --color: var(--ion-color-primary);
+//         font-weight: bold;
+//       }
+
+//       ion-card-subtitle {
+//         --color: var(--ion-color-primary);
+//       }
+
+//       /* iOS places the subtitle above the title */
+//       ion-card-header.ios {
+//         display: flex;
+//         flex-flow: column-reverse;
+//       }
+
+//     ion-img{
+//         width: 100%;
+//         text-align: center;
+//     }
+
+//     ion-title {
+//         font-size: 18px;
+//     }
+
+//     ion-card-title{
+//         font-weight: bold;
+//         margin-top: 5px;
+//         margin-bottom: 5px;
+//         .h1{
+//             font-size: 21px;
+//         }
+//         .h2{
+//             font-size: 18px;
+//         }
+//         .h3{
+//             font-size: 15px;
+//         }
+//         .h4{
+
+//             font-size: 12px;
+//         }
+//     }
+
+//     ion-chip {
+//         margin-left: 0;
+//     }
+
+//     ion-label{
+//         font-size: 14px;
+//         color: #fff;
+//     }
+
+//     ion-col{
+//         text-align: center;
+//         align-items: center;
+//     }
+
+//     ion-button {
+//         font-weight: 700;
+//     }
+// }
 
 .container {
     padding: 6px 20px;
