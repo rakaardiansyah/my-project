@@ -8,19 +8,42 @@ ion-toolbar {
 
 ion-title {
     font-size: 18px;
+    justify-content: center;
+    display: flex;
+}
+
+ion-card-title{
+    font-weight: bold;
+    justify-content: left;
+    display: flex;
+    margin: 10px;
+}
+
+ion-card-subtitle{
+    justify-content: left;
+    display: flex;
+    margin: 10px;
+}
+
+ion-label{
+    margin-left: 0;
 }
 
 ion-chip {
     margin-left: 0;
 }
 
-ion-label{
-    font-size: 14px;
-}
-
 ion-col{
-    text-align: center;
-    align-items: center;
+    justify-content: center;
+    display: flex;
+    .titleFilter{
+        --background: var(--ion-color-primary);
+        font-size: 20px;
+        font-weight: bold;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
 }
 
 ion-header {
@@ -46,90 +69,38 @@ ion-header {
 
     ion-card{
         margin: 10px;
-        ion-grid{
-            text-align: center;
-            justify-content: center;
-            display: flex;
-        }
-        .titleFilters{
-            margin-top: 8px;
-            margin-bottom: 8px;
+
+        .topFilters{
+            background-color: #fff ;
+            padding: 15px 8px;
+
+            .image{
+                width: 110px;
+                height: 110px;
+                margin-right: 10px;
+                color:var(--ion-color-primary);
+            }
+            .titleName{
+                font-weight: bold;
+                font-size: 18px;
+                margin: 2px;
+            }
+            .titleEmail{
+                font-size: 18px;
+                margin: 2px;
+            }
+            .titleTelp{
+                font-size: 18px;
+                margin: 2px;
+            }
+
             h1, h2, h3, h4, h5, h6 {
+                color: var(--ion-color-primary);
                 font-weight: bold;
             }
         }
     }
-
-
 }
-
-
-// .ion-content{
-
-//     font-family: 'Poppins', sans-serif;
-//     --background: var(--ion-col or-primary);
-
-//       ion-card-title {
-//         --color: var(--ion-color-primary);
-//         font-weight: bold;
-//       }
-
-//       ion-card-subtitle {
-//         --color: var(--ion-color-primary);
-//       }
-
-//       /* iOS places the subtitle above the title */
-//       ion-card-header.ios {
-//         display: flex;
-//         flex-flow: column-reverse;
-//       }
-
-//     ion-img{
-//         width: 100%;
-//         text-align: center;
-//     }
-
-//     ion-title {
-//         font-size: 18px;
-//     }
-
-//     ion-card-title{
-//         font-weight: bold;
-//         margin-top: 5px;
-//         margin-bottom: 5px;
-//         .h1{
-//             font-size: 21px;
-//         }
-//         .h2{
-//             font-size: 18px;
-//         }
-//         .h3{
-//             font-size: 15px;
-//         }
-//         .h4{
-
-//             font-size: 12px;
-//         }
-//     }
-
-//     ion-chip {
-//         margin-left: 0;
-//     }
-
-//     ion-label{
-//         font-size: 14px;
-//         color: #fff;
-//     }
-
-//     ion-col{
-//         text-align: center;
-//         align-items: center;
-//     }
-
-//     ion-button {
-//         font-weight: 700;
-//     }
-// }
 
 .container {
     padding: 6px 20px;
@@ -141,14 +112,18 @@ ion-header {
     background-color: #F8AD3E;
     padding: 10px;
 
-    .ion-card-title{
+    .titlePayment{
+        font-size: 20px;
         font-weight: bold;
-        text-align: center;
-        color:#fff;
+        align-items: center;
+        justify-content: center;
+        display: flex;
     }
 
-    .ion-label{
-        text-align: center;
-        color:#fff;
+    .descPayment{
+        font-size: 15px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
     }
 }

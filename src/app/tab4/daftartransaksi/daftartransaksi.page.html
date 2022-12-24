@@ -13,71 +13,74 @@
 
   <ion-card>
 
-    <ion-item>
-      <div class="titleFilters">
-        <h3>Filter</h3>
-      </div>
-    </ion-item>
+    <div class="topFilters">
 
-    <ion-row>
-      <ion-col width-40>
-        <ion-select interface="popover" placeholder="Select One">
-          <ion-select-option value="Proses">Proses</ion-select-option>
-          <ion-select-option value="BelumBayar">Belum Bayar</ion-select-option>
-          <ion-select-option value="Batal">Batal</ion-select-option>
-        </ion-select>
-      </ion-col>
-      <ion-col width-40>
-        <ion-select interface="popover" placeholder="Select One">
-          <ion-select-option value="Haji">Haji</ion-select-option>
-          <ion-select-option value="Umrah">Umrah</ion-select-option>
-          <ion-select-option value="Qurban">Qurban</ion-select-option>
-        </ion-select>
-      </ion-col>
-      <ion-col width-40>
-        <ion-select  interface="popover" placeholder="Select One">
-          <ion-select-option value="Week1">Week 1</ion-select-option>
-          <ion-select-option value="Week2">Week 2</ion-select-option>
-          <ion-select-option value="Week3">Week 3</ion-select-option>
-        </ion-select>
-      </ion-col>
-    </ion-row>
-    <ion-grid>
+      <ion-item lines="none">
+        <ion-col>
+          <div class="titleFilter">
+            FILTER
+          </div>
+        </ion-col>
+      </ion-item>
 
-    </ion-grid>
+      <ion-row>
+        <ion-col width-40>
+          <ion-select interface="popover" placeholder="Select One">
+            <ion-select-option value="Proses">Proses</ion-select-option>
+            <ion-select-option value="BelumBayar">Belum Bayar</ion-select-option>
+            <ion-select-option value="Batal">Batal</ion-select-option>
+          </ion-select>
+        </ion-col>
+        <ion-col width-40>
+          <ion-select interface="popover" placeholder="Select One">
+            <ion-select-option value="Haji">Haji</ion-select-option>
+            <ion-select-option value="Umrah">Umrah</ion-select-option>
+            <ion-select-option value="Qurban">Qurban</ion-select-option>
+          </ion-select>
+        </ion-col>
+        <ion-col width-40>
+          <ion-select  interface="popover" placeholder="Select One">
+            <ion-select-option value="Week1">Week 1</ion-select-option>
+            <ion-select-option value="Week2">Week 2</ion-select-option>
+            <ion-select-option value="Week3">Week 3</ion-select-option>
+          </ion-select>
+        </ion-col>
+      </ion-row>
+    </div>
+
   </ion-card>
 
   <ion-card>
-    <ion-grid>
-      <ion-row class="ion-align-center">
-        <ion-col size="3">
-          <div class="image">
-            <img src="../../assets/image-travel/Altrama-Tour.png">
-          </div>
-        </ion-col>
-        <ion-col size="7">
+    <ion-row>
+      <ion-col size="3">
+        <div class="image">
+          <img src="../../assets/image-travel/Altrama-Tour.png">
+        </div>
+      </ion-col>
+      <ion-col size="6">
+        <ion-list>
           <ion-card-title>
-            <h4>Altrama Tour</h4>
+            Altrama Tour
           </ion-card-title>
           <ion-card-subtitle>
             20 April 2020
           </ion-card-subtitle>
-        </ion-col>
-        <ion-col size="2">
-          <div class="menu">
-            <h3>
-              <ion-buttons slot="end">
-                <ion-button (click)="_openPopover($event)">
-                  <ion-icon slot="icon-only" name="ellipsis-vertical-outline"></ion-icon>
-                </ion-button>
-              </ion-buttons>
-            </h3>
-          </div>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
+        </ion-list>
+      </ion-col>
+      <ion-col size="3">
+        <div class="menu">
+          <h3>
+            <ion-buttons slot="end">
+              <ion-button (click)="_openPopover($event)">
+                <ion-icon slot="icon-only" name="ellipsis-vertical-outline"></ion-icon>
+              </ion-button>
+            </ion-buttons>
+          </h3>
+        </div>
+      </ion-col>
+    </ion-row>
 
-    <ion-item>
+    <ion-item lines="none">
       <ion-img src="../../assets/image-thumnails/Untitle_1.jpg"></ion-img>
     </ion-item>
 
@@ -97,33 +100,38 @@
     </ion-item>
 
     <ion-footer class="footer">
-      <ion-card-title>Belum Bayar</ion-card-title>
-      <ion-label>2x Bayar</ion-label>
+      <div class="titlePayment">
+        Belum Bayar
+      </div>
+      <div class="descPayment">
+        2x Bayar
+      </div>
     </ion-footer>
   </ion-card>
 
   <ion-card>
-    <ion-grid>
-      <ion-row class="ion-align-center">
-        <ion-col size="3">
-          <div class="image">
-            <img src="../../assets/image-travel/Nur-Hamdalah.png">
-          </div>
-        </ion-col>
-        <ion-col size="7">
+    <ion-row>
+      <ion-col size="3">
+        <div class="image">
+          <img src="../../assets/image-travel/Nur-Hamdalah.png">
+        </div>
+      </ion-col>
+      <ion-col size="6">
+        <ion-list>
           <ion-card-title>
-            <h4>Altrama Tour</h4>
+            Altrama Tour
           </ion-card-title>
           <ion-card-subtitle>
             20 April 2020
           </ion-card-subtitle>
-        </ion-col>
-        <ion-col size="2">
-        </ion-col>
-      </ion-row>
-    </ion-grid>
+        </ion-list>
+      </ion-col>
+      <ion-col size="3">
 
-    <ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-item lines="none">
       <img src="../../assets/image-thumnails/Untitled_5.jpg">
     </ion-item>
 
@@ -139,51 +147,10 @@
     </ion-item>
 
     <ion-footer class="footer">
-      <ion-card-title>Proses</ion-card-title>
+      <div class="titlePayment">
+        Proses
+      </div>
     </ion-footer>
-  </ion-card>
-
-  <ion-card>
-    <ion-card-header>
-      <ion-grid>
-        <ion-row class="ion-align-center">
-          <ion-col size="3">
-            <div class="image">
-              <img src="../../assets/image-travel/Nur-Hamdalah.png">
-            </div>
-          </ion-col>
-          <ion-col size="7">
-            <ion-card-title>
-              <h4>Altrama Tour</h4>
-            </ion-card-title>
-            <ion-card-subtitle>
-              20 April 2020
-            </ion-card-subtitle>
-          </ion-col>
-          <ion-col size="2">
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-
-      <ion-item>
-        <img src="../../assets/image-thumnails/Untitled_5.jpg">
-      </ion-item>
-
-      <ion-item lines="none">
-        <ion-card-subtitle>
-          Jl. Raya Kotabumi2 No.13 RT.08/4 Menteng Jaya Jakarta Pusat
-        </ion-card-subtitle>
-      </ion-item>
-
-      <ion-item lines="none">
-        <ion-icon name="cash-outline" slot="start"></ion-icon>
-        <ion-label>IDR 18.450.000</ion-label>
-      </ion-item>
-
-      <ion-footer class="footer">
-        <ion-card-title>Proses</ion-card-title>
-      </ion-footer>
-    </ion-card-header>
   </ion-card>
 
 </ion-content>
