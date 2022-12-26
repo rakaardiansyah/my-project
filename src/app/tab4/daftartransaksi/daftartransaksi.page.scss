@@ -3,7 +3,6 @@ ion-toolbar {
     --background: var(--ion-color-primary);
     color: #fff;
     font-size: 20px;
-    text-align: center;
 }
 
 ion-title {
@@ -63,15 +62,15 @@ ion-header {
     }
 }
 
-.ion-content{
+ion-content{
     font-family: 'Poppins', sans-serif;
-    --background: var(--ion-col or-primary);
+    --background: #f0f0f2;
 
     ion-card{
         margin: 10px;
 
         .topFilters{
-            background-color: #fff ;
+            background-color: #fff;
             padding: 15px 8px;
 
             .image{
@@ -109,7 +108,7 @@ ion-header {
 
 .footer{
     text-align: center;
-    background-color: #F8AD3E;
+    background-color: var(--ion-color-secondary);
     padding: 10px;
 
     .titlePayment{

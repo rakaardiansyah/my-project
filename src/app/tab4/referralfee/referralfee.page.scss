@@ -62,9 +62,9 @@ ion-header {
     }
 }
 
-.ion-content{
+ion-content{
     font-family: 'Poppins', sans-serif;
-    --background: var(--ion-col or-primary);
+    --background: #f0f0f2;
 
     ion-card{
         margin: 10px;
@@ -106,9 +106,9 @@ ion-header {
     color: #ffffff;
 }
 
-.footer{
+.headerTgl{
     text-align: center;
-    background-color: #F8AD3E;
+    background-color: var(--ion-color-secondary);
     padding: 10px;
 
     .titlePayment{

@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: FasilitasmembershipPage
+  },
+  {
+    path: 'daftarmembership',
+    loadChildren: () => import('./daftarmembership/daftarmembership.module').then( m => m.DaftarmembershipPageModule)
   }
 ];
 
