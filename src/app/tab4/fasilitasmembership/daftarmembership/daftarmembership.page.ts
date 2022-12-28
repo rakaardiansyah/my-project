@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -5,11 +6,12 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './daftarmembership.page.html',
   styleUrls: ['./daftarmembership.page.scss'],
 })
-export class DaftarmembershipPage implements OnInit {
+export class DaftarmembershipPage{
 
-  constructor() { }
+  constructor(private route: Router) { }
 
-  ngOnInit() {
+  getBack() {
+    this.route.navigate(['/fasilitasmembership']);
   }
 
 }

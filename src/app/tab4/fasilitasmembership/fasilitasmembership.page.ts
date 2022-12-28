@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-fasilitasmembership',
   templateUrl: './fasilitasmembership.page.html',
   styleUrls: ['./fasilitasmembership.page.scss'],
 })
-export class FasilitasmembershipPage implements OnInit {
+export class FasilitasmembershipPage {
 
-  constructor() { }
+  constructor(private route: Router) { }
 
-  ngOnInit() {
+  getfasMembership() {
+    this.route.navigate(['/fasilitasmembership/daftarmembership']);
   }
 
 }
