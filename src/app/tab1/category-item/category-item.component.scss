@@ -25,3 +25,14 @@
         margin-bottom: 10px;
     }
 }
+
+.wrapper.active {
+    .image-card {
+        background-color: #FEB300;
+    }
+
+    p {
+        color: #1d1d1d;
+        font-weight: 600;
+    }
+}
