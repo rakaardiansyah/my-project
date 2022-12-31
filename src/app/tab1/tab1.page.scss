@@ -13,7 +13,7 @@ ion-title {
 ion-img {
     width: 110px;
     height: 110px;
-    margin-right: 10px;
+    margin: 2px;
 }
 
 ion-card-title{
@@ -40,6 +40,7 @@ ion-chip {
 ion-col{
     justify-content: center;
     display: flex;
+
     .titleFilter{
         --background: var(--ion-color-primary);
         font-size: 20px;
@@ -60,42 +61,50 @@ ion-content{
     font-family: 'Poppins', sans-serif;
     --background: #ffffff;
 
-    ion-card{
-        margin: 10px;
-
-        .img {
-                width: 110px;
-                height: 110px;
-                margin-right: 10px;
-        }
-
-        h1, h2, h3, h4, h5, h6 {
-            color: var(--ion-color-primary);
-            font-weight: bold;
-        }
-    }
-}
-
-.container {
-    padding: 6px 20px;
-    color: #ffffff;
-}
-
-.card-categori{
-    text-align: center;
-    padding: 5px;
-    width: 150px;
-    height: 150px;
-
-
-    .img {
+    .menuCategori{
+        margin-top: -20px;
+        background-color: #ffffff;
         width: 100%;
-        align-items: center;
+        height: 200px;
+
+        p{
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-bottom: 15px;
+            font-size: 20px;
+            color: black;
+            align-items: center;
+        }
+
+        .categori{
+            max-width: 100%;
+            border: black;
+            display: flex;
+            overflow-x: auto;
+
+            .cardCategori{
+                width: 100%;
+
+                .item {
+                    height: auto;
+                    position: relative;
+
+                    #img{
+                        width: 110px;
+                        height: 102px;
+                        border-radius: 50%;
+                        display: block;
+                        margin-left: 100px;
+                        margin-right: auto;
+                        border:3px solid #fff;
+                    }
+
+                }
+
+            }
+
+        }
+
     }
 
-    .titleCategori{
-        margin-bottom: 10px;
-        font-size: 20px;
-        align-items: center;
-    }
 }

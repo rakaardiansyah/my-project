@@ -4,55 +4,56 @@
   </ion-toolbar>
 </ion-header>
 
+<ion-content>
 
-<ion-content [fullscreen]="true">
-  <div class="card-categori">
-    <ion-card text-center>
-      <ion-item lines="none">
-        <ion-img src="../../assets/icon-kategori/icon-haji.png"></ion-img>
-      </ion-item>
+  <!-- CATEGORIES -->
+  <!-- <div class="categories">
+    <app-category-item></app-category-item>
+  </div> -->
 
-      <div class="titleCategori">
-        Haji
-      </div>
-    </ion-card>
-    <ion-card text-center>
-      <ion-item lines="none">
-        <ion-img src="../../assets/icon-kategori/icon-umrah.png"></ion-img>
-      </ion-item>
+  <div class="menuCategori">
+    <ion-item lines="none">
+      <ion-title>Kategori</ion-title>
+    </ion-item>
 
-      <div class="titleCategori">
-        Umrah
-      </div>
-    </ion-card>
-    <ion-card text-center>
-      <ion-item lines="none">
-        <ion-img src="../../assets/icon-kategori/icon-qurban2.png"></ion-img>
-      </ion-item>
+    <div class="categori">
+      <ion-card id="cardCategori">
+        <div class="item">
+          <img id="img" src="../../assets/icon-kategori/icon-haji.png"/>
+          <p>Haji</p>
+        </div>
+      </ion-card>
 
-      <div class="titleCategori">
-        Qurban
-      </div>
-    </ion-card>
-    <ion-card text-center>
-      <ion-item lines="none">
-        <ion-img src="../../assets/icon-kategori/cicil-emas.png"></ion-img>
-      </ion-item>
+      <ion-card id="cardCategori">
+        <div class="item">
+          <img id="img" src="../../assets/icon-kategori/icon-umrah.png"/>
+          <p>Umrah</p>
+        </div>
+      </ion-card>
 
-      <div class="titleCategori">
-        Cicil Emas
-      </div>
-    </ion-card>
-    <ion-card text-center>
-      <ion-item lines="none">
-        <ion-img src="../../assets/icon-kategori/gadai-emas8.png"></ion-img>
-      </ion-item>
+      <ion-card id="cardCategori">
+        <div class="item">
+          <img id="img" src="../../assets/icon-kategori/icon-qurban2.png"/>
+          <p>Qurban</p>
+        </div>
+      </ion-card>
 
-      <div class="titleCategori">
-        Gadai Emas
-      </div>
-    </ion-card>
+      <ion-card id="cardCategori">
+        <div class="item">
+          <img id="img" src="../../assets/icon-kategori/cicil-emas.png"/>
+          <p>Cicil Emas</p>
+        </div>
+      </ion-card>
+
+      <ion-card id="cardCategori">
+        <div class="item">
+          <img id="img" src="../../assets/icon-kategori/gadai-emas8.png"/>
+          <p>Gadai Emas</p>
+        </div>
+      </ion-card>
+
+    </div>
+
   </div>
 
-  <!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
 </ion-content>
