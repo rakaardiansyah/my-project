@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Category } from 'src/app/tab1/models/category.model'
+import { Category } from 'src/app/tab1/category-item/models/category.models'
 
 
 @Component({

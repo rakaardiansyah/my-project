@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./daftarmembership.page.scss'],
 })
 export class DaftarmembershipPage{
+loadImageFromDevice($event: Event) {
+throw new Error('Method not implemented.');
+}
 
   constructor(private route: Router) { }
 

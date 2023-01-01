@@ -10,53 +10,54 @@
 
 <ion-content>
   <div class="layoutBg">
-    <ion-row>
-      <ion-item lines="none">
-        <h3>Syarat & Ketentuan sebagai Mitra Referral</h3>
-      </ion-item>
-    </ion-row>
-    <div class="descBg">
-      <ion-label>- Kami tidak memungut imbalan dan pembayaran dalam proses
-        pendaftaran ini</ion-label>
-    </div>
-    <div class="descBg">
-      <ion-label>- Akun Mitra Referral anda akan aktif, setelah kami melakukan
-        verifikasi data terlebih dahulu</ion-label>
-    </div>
-    <div class="descBg">
-      <ion-label>Luangkan waktu anda untuk membaca terlebih dahulu perjanjian dan
-        ketentuan yang tertuang pada lampiran berikut :</ion-label>
-    </div>
-
+    <ion-item lines="none">
+      <h3>Syarat & Ketentuan sebagai Mitra Referral</h3>
+    </ion-item>
+    <ion-item lines="none">
+      <p>- Kami tidak memungut imbalan dan pembayaran dalam proses
+        pendaftaran ini</p>
+    </ion-item>
+    <ion-item lines="none">
+      <p>- Akun Mitra Referral anda akan aktif, setelah kami melakukan
+        verifikasi data terlebih dahulu</p>
+    </ion-item>
+    <ion-item lines="none">
+      <p>Luangkan waktu anda untuk membaca terlebih dahulu perjanjian dan
+        ketentuan yang tertuang pada lampiran berikut :</p>
+    </ion-item>
     <ion-card>
       <ion-item>
         <!-- TODO: BUAT TANDA TANGAN -->
       </ion-item>
     </ion-card>
-
-    <div class="descBg">
-      <ion-label>Foto selfie dengan memegang KTP</ion-label>
-    </div>
-    <div class="descBg">
+    <ion-item lines="none">
+      <p>Foto selfie dengan memegang KTP</p>
+    </ion-item>
+    <ion-item lines="none">
+      <p>Ambil Foto</p>
+    </ion-item>
+    <ion-item lines="none">
       <!-- TODO: button ambil foto -->
-      <ion-label>Ambil Foto</ion-label>
-    </div>
-    <div class="descBg">
-      <!-- TODO: tambah checkbox -->
-      <ion-label>Dengan ini saya sudah membaca, memahami dan setuju dengan ketentuan terkait
-        Mitra Referral di atas</ion-label>
-    </div>
-
-    <div class="descBg">
-      <ion-row>
-        <ion-col>
-          <ion-button class="button" expand="block">Daftar</ion-button>
-        </ion-col>
-        <ion-col>
-          <ion-button class="button" (click)="getBack()" expand="block">Batal</ion-button>
-        </ion-col>
-      </ion-row>
-    </div>
-
+      <ion-button expand="full">
+        <ion-icon lazy="true" slot="start" name="image"></ion-icon>
+        <ion-label slot="end">Upload</ion-label>
+        <input type="file" (change)="loadImageFromDevice($event)" id="file-input"
+          accept="image/png, image/jpeg">
+      </ion-button>
+    </ion-item>
+    <!-- TODO: tambah checkbox -->
+    <ion-item lines="none">
+      <ion-checkbox slot="start" [indeterminate]="true"></ion-checkbox>
+      <p>Dengan ini saya sudah membaca, memahami dan setuju dengan ketentuan terkait
+        Mitra Referral di atas</p>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-button class="button" expand="block">Daftar</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button class="button" (click)="getBack()" expand="block">Batal</ion-button>
+      </ion-col>
+    </ion-row>
   </div>
 </ion-content>
