@@ -59,52 +59,87 @@ ion-icon {
 
 ion-content{
     font-family: 'Poppins', sans-serif;
-    --background: #ffffff;
+    --padding-start: 5px;
+    --padding-end: 5px;
 
-    .menuCategori{
-        margin-top: -20px;
-        background-color: #ffffff;
-        width: 100%;
-        height: 200px;
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 12px;
 
-        p{
-            padding-left: 20px;
-            padding-right: 20px;
-            margin-bottom: 15px;
-            font-size: 20px;
-            color: black;
-            align-items: center;
+        h1{
+            font-weight: 400;
+            color: #000000;
+            margin: 0;
         }
 
-        .categori{
-            max-width: 100%;
-            border: black;
+        h2{
+            font-weight: 400;
+            color: #000000;
+            margin: 0;
+        }
+
+        h3{
+            font-weight: 400;
+            color: #000000;
+            margin: 0;
+        }
+
+        h4{
+            font-weight: 400;
+            color: #000000;
+            margin: 0;
+        }
+
+        h5{
+            font-weight: 400;
+            color: #000000;
+            margin: 0;
+        }
+
+        h6{
+            font-size: 3 rem;
+            font-weight: 400;
+            color: #000000;
+            margin: 0;
+        }
+
+        .avatar{
+            width: 50px;
+            height: 50px;
+            background-color: #123167;
+            border-radius: 50%;
             display: flex;
-            overflow-x: auto;
-
-            .cardCategori{
-                width: 100%;
-
-                .item {
-                    height: auto;
-                    position: relative;
-
-                    #img{
-                        width: 110px;
-                        height: 102px;
-                        border-radius: 50%;
-                        display: block;
-                        margin-left: 100px;
-                        margin-right: auto;
-                        border:3px solid #fff;
-                    }
-
-                }
-
-            }
-
+            align-items: flex-end;
+            justify-content: center;
+            overflow: hidden;
         }
 
+        ion-img{
+            width: 90%;
+            height: 90%;
+        }
+
+        ion-icon{
+            width: 45px;
+            height: 45px;
+        }
+    }
+
+    .categories{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 8px;
+        padding: 12px;
+    }
+
+    .list-promo {
+        font-weight: 700;
+        color: #515151;
+        font-size: 1.8rem;
+        margin-bottom: 1.6rem;
+        margin-top: 2.5rem;
     }
 
 }

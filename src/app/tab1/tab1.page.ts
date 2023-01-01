@@ -28,25 +28,25 @@ export class Tab1Page implements OnInit {
         id: 2,
         label: 'Umrah',
         image: '../../assets/icon-kategori/icon-umrah.png',
-        active: true,
+        active: false,
       },
       {
         id: 3,
         label: 'Qurban',
         image: '../../assets/icon-kategori/icon-qurban2.png',
-        active: true,
+        active: false,
       },
       {
         id: 4,
         label: 'Cicil Emas',
         image: '../../assets/icon-kategori/cicil-emas.png',
-        active: true,
+        active: false,
       },
       {
         id: 5,
         label: 'Gadai Emas',
         image: '../../assets/icon-kategori/gadai-emas4.png',
-        active: true,
+        active: false,
       },
     ]
   }

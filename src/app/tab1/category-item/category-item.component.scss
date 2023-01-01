@@ -5,10 +5,9 @@
     text-align: center;
 
     .image-card{
-        width: 250px;
+        padding: 3px;
         background-color: #f3f3f3;
-        padding:0.8rem;
-        border-radius: 1.5rem;
+        border-radius: 10px;
         margin-bottom: 0.5rem;
 
         ion-img{
@@ -18,9 +17,9 @@
     }
 
     p {
-        font-size: 20px;
+        font-size: 15px;
         color: #262626;
-        font-weight: 300px;
+        font-weight: 100px;
         margin-top: 10px;
         margin-bottom: 10px;
     }
@@ -28,7 +27,7 @@
 
 .wrapper.active {
     .image-card {
-        background-color: #FEB300;
+        background-color: #315ba3;
     }
 
     p {
