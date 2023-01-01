@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button color="light"
+      defaultHref="search-chef"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Gadai Emas</ion-title>
+    <ion-title slot="end" (click)="reset()">Reset</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- TODO: Sesuaikan dgn contoh di web -->
+<ion-content>
+  <div class="upperBox">
+    <ion-item>
+      <ion-label position="floating">Jenis Referral</ion-label>
+      <ion-input  type="text"
+                placeholder="Jenis Referral"
+                name="jenisreferral"
+                required="jenisreferral"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Nilai Taksir Bank</ion-label>
+      <ion-input  type="number"
+                  placeholder="Nilai Taksir"
+                  name="nilaitaksir"
+                  required="nilaitaksir"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Biaya (Max)</ion-label>
+      <ion-input  placeholder="Biaya (Max)"
+                  name="biayamas"
+                  required="biayamax"
+                  type="number"
+                  ngModel number></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Pemeliharaan</ion-label>
+      <ion-input  type="text"
+                  placeholder="Pemeliharaan"
+                  name="pemeliharaan"
+                  required="pemeliharaan"></ion-input>
+    </ion-item>
+  </div>
+
+  <div class="upperBox">
+    <ion-row>
+      <ion-col>
+        <ion-button class="button" expand="block">Referralkan</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button class="button" expand="block">Batal</ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

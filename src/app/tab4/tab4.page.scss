@@ -19,7 +19,7 @@ ion-label{
 }
 
 ion-col{
-    text-align: center;
+    text-align: left;
     align-items: center;
 }
 
@@ -35,13 +35,13 @@ ion-content{
     --background: #f0f0f2;
     .profileHeader{
         background-color: #fff ;
-        justify-content: center;
-        display: flex;
-        padding: 15px 8px;
+        justify-content: left;
+        padding: 15px 25px;
         img{
-            width: 110px;
-            height: 110px;
-            margin-right: 10px;
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+            margin-top: 10px;
             color:var(--ion-color-primary);
         }
         .titleName{
