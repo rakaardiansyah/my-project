@@ -17,4 +17,7 @@ import { DaftarmembershipPage } from './daftarmembership.page';
   ],
   declarations: [DaftarmembershipPage]
 })
-export class DaftarmembershipPageModule {}
+
+export class DaftarmembershipPageModule {
+
+}

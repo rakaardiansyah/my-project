@@ -6,15 +6,21 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './daftarmembership.page.html',
   styleUrls: ['./daftarmembership.page.scss'],
 })
-export class DaftarmembershipPage{
-loadImageFromDevice($event: Event) {
-throw new Error('Method not implemented.');
-}
+
+export class DaftarmembershipPage {
+
+  loadImageFromDevice($event: Event) {
+    throw new Error('Method not implemented.');
+  }
 
   constructor(private route: Router) { }
 
   getBack() {
     this.route.navigate(['/fasilitasmembership']);
+  }
+
+  choosePhotos() {
+
   }
 
 }
