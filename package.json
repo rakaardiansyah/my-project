@@ -19,12 +19,13 @@
     "@angular/platform-browser": "^15.0.0",
     "@angular/platform-browser-dynamic": "^15.0.0",
     "@angular/router": "^15.0.0",
+    "@ionic-native/camera": "^5.36.0",
     "@ionic/angular": "^6.1.9",
     "@mdi/font": "^7.1.96",
     "ionic-cache": "^6.0.3",
     "ionicons": "^6.0.3",
     "material-design-icons": "^3.0.1",
-    "rxjs": "~7.5.0",
+    "rxjs": "^6.0.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
@@ -44,7 +45,12 @@
     "@typescript-eslint/eslint-plugin": "5.3.0",
     "@typescript-eslint/parser": "5.3.0",
     "cordova-plugin-camera": "^6.0.0",
+    "cordova-plugin-device": "2.0.2",
+    "cordova-plugin-ionic-keyboard": "^2.0.5",
     "cordova-plugin-ionic-webview": "^5.0.0",
+    "cordova-plugin-splashscreen": "5.0.2",
+    "cordova-plugin-statusbar": "^2.4.2",
+    "cordova-windows": "^7.0.1",
     "eslint": "^7.6.0",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-jsdoc": "30.7.6",
@@ -64,7 +70,14 @@
   "cordova": {
     "plugins": {
       "cordova-plugin-ionic-webview": {},
-      "cordova-plugin-camera": {}
-    }
+      "cordova-plugin-camera": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-ionic-keyboard": {}
+    },
+    "platforms": [
+      "windows"
+    ]
   }
 }

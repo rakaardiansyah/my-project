@@ -34,7 +34,10 @@
       <p>Foto selfie dengan memegang KTP</p>
     </ion-item>
     <ion-item lines="none">
-      <ion-button (click)="choosePhotos">Pilih Foto</ion-button>
+      <ion-button (click)="captureImage()">
+        Upload Foto
+     </ion-button>
+     <img [src]="clickedImage" />
     </ion-item>
     <ion-item lines="none">
       <!-- TODO: button ambil foto -->
