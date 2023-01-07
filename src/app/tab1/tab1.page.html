@@ -1,43 +1,46 @@
 <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Home</ion-title>
-  </ion-toolbar>
+<ion-header class="ion-no-border">
+  <ion-list lines="none">
+    <ion-item color="primary">
+      <ion-col size="2">
+        <div class="avatar">
+          <ion-img src="../../assets/icon/account.png"></ion-img>
+        </div>
+      </ion-col>
+      <ion-col size="8">
+        <ion-list>
+          <h6>Assalamualaikum,</h6>
+          <h3>Raka Ardiansyah</h3>
+        </ion-list>
+      </ion-col>
+      <ion-col size="3">
+        <div class="notification">
+          <ion-icon name="notifications"></ion-icon>
+        </div>
+      </ion-col>
+    </ion-item>
+  </ion-list>
+  <div class="popover">
+    <ion-searchbar></ion-searchbar>
+  </div>
 </ion-header>
 
 <ion-content>
 
-  <!-- HEADER -->
-  <div class="header">
-    <ion-col size="2">
-      <div class="avatar">
-        <ion-img src="../../assets/icon/account.png"></ion-img>
-      </div>
-    </ion-col>
-    <ion-col size="8">
-      <ion-list>
-        <h6>Assalamualaikum,</h6>
-        <h3>Raka Ardiansyah</h3>
-      </ion-list>
-    </ion-col>
-    <ion-col size="3">
-      <div class="notification">
-        <ion-icon name="notifications"></ion-icon>
-      </div>
-    </ion-col>
-
-
-  </div>
-
   <!-- CATEGORIES -->
-  <div class="categories">
-    <app-category-item *ngFor="let item of categories" [item]="item"></app-category-item>
-  </div>
+  <ion-card>
+    <div class="categories">
+      <app-category-item *ngFor="let item of categories" [item]="item"></app-category-item>
+    </div>
+  </ion-card>
 
   <!-- PROMO -->
+  <h1 class="list-promo">Promo Paket!</h1>
 
   <!-- PAKET TERBARU -->
+  <h1 class="lis-terbaru"></h1>
 
   <!-- PAKET TERLARIS -->
+  <h1 class="list-terlaris"></h1>
 
 </ion-content>
