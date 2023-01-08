@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Category } from 'src/app/tab1/category-item/models/category.models'
-
+import { Category } from 'src/app/tab1/category-item/models/category.models';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tab1',
@@ -8,9 +8,12 @@ import { Category } from 'src/app/tab1/category-item/models/category.models'
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page implements OnInit {
+
   categories: Category[] = [];
 
-  constructor() {}
+  constructor(
+    public router : Router
+  ) { }
 
   ngOnInit() {
     this.getCategories();
@@ -51,7 +54,13 @@ export class Tab1Page implements OnInit {
     ]
   }
 
+  cicilEmas() {
+    this.router.navigateByUrl("/cicilemas");
+  }
 
+  gadaiEmas() {
+    this.router.navigateByUrl("/gadaiemas");
+  }
 
   async presentLoading() {
     // const loading = await this.loadingController.create({
