@@ -22,7 +22,7 @@
   </ion-list>
   <div class="popover">
     <ion-card class="categories">
-      <app-category-item (click)="categories" *ngFor="let item of categories" [item]="item"></app-category-item>
+      <app-category-item *ngFor="let item of categories" [item]="item"></app-category-item>
     </ion-card>
     <ion-searchbar></ion-searchbar>
   </div>
@@ -38,6 +38,7 @@
 
    <!-- PAKET TERLARIS -->
    <h1 class="list-terlaris"></h1>
+
 
   <!-- CATEGORIES1 -->
   <!-- <ion-card>
