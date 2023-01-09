@@ -77,15 +77,18 @@ ion-header{
     }
     .popover{
         margin:0 8px;
+
         .categories{
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             grid-gap: 5px;
             padding: 10px;
+            margin-top: -30px ;
         }
+
         ion-searchbar {
             --border-radius:20px;
-            margin-top: -30px ;
+            margin-top: 10px ;
         }
     }
 }
@@ -134,13 +137,6 @@ ion-icon {
 ion-content{
     font-family: 'Poppins', sans-serif;
 
-    .categories{
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-gap: 5px;
-        padding: 10px;
-    }
-
     .item-categories{
         width: 72px;
         height: 120px;
@@ -177,6 +173,13 @@ ion-content{
             align-items: center;
             text-align: center;
         }
+    }
+
+    .categories{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 5px;
+        padding: 10px;
     }
 
     .list-promo {

@@ -3,4 +3,5 @@ export interface Category{
     label: string;
     image: string;
     active: boolean;
+    path: string;
 }

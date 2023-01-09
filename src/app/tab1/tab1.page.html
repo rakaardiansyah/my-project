@@ -21,20 +21,26 @@
     </ion-item>
   </ion-list>
   <div class="popover">
+    <ion-card class="categories">
+      <app-category-item (click)="categories" *ngFor="let item of categories" [item]="item"></app-category-item>
+    </ion-card>
     <ion-searchbar></ion-searchbar>
   </div>
 </ion-header>
 
 <ion-content>
 
-  <!-- CATEGORIES -->
-  <ion-card>
-    <div class="categories">
-      <app-category-item *ngFor="let item of categories" [item]="item"></app-category-item>
-    </div>
-  </ion-card>
+   <!-- PROMO -->
+   <h1 class="list-promo">Promo Paket!</h1>
 
-  <ion-card>
+   <!-- PAKET TERBARU -->
+   <h1 class="lis-terbaru"></h1>
+
+   <!-- PAKET TERLARIS -->
+   <h1 class="list-terlaris"></h1>
+
+  <!-- CATEGORIES1 -->
+  <!-- <ion-card>
     <ion-row>
       <div class="item-categories ion-align-items-center ion-justify-content-center">
         <div class="image-card">
@@ -67,15 +73,13 @@
         <p class="ion-no-margin">Gadai Emas</p>
       </div>
     </ion-row>
-  </ion-card>
+  </ion-card> -->
 
-  <!-- PROMO -->
-  <h1 class="list-promo">Promo Paket!</h1>
-
-  <!-- PAKET TERBARU -->
-  <h1 class="lis-terbaru"></h1>
-
-  <!-- PAKET TERLARIS -->
-  <h1 class="list-terlaris"></h1>
+  <!-- CATEGORIES2 -->
+  <!-- <ion-card>
+    <div class="categories">
+      <app-category-item *ngFor="let item of categories" [item]="item"></app-category-item>
+    </div>
+  </ion-card> -->
 
 </ion-content>

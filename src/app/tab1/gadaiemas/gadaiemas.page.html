@@ -13,46 +13,91 @@
 <ion-content>
   <div class="upperBox">
     <ion-item>
-      <ion-label position="floating">Jenis Referral</ion-label>
-      <ion-input  type="text"
-                placeholder="Jenis Referral"
-                name="jenisreferral"
-                required="jenisreferral"></ion-input>
+      <ion-label position="floating">Nama Nasabah</ion-label>
+      <ion-input type="text"
+                placeholder="Nama Lengkap"
+                name="namalengkap"
+                required="namalengkap"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-label position="floating">Nilai Taksir Bank</ion-label>
+      <ion-label position="floating">Nomer HP / Whatsapp</ion-label>
       <ion-input  type="number"
-                  placeholder="Nilai Taksir"
-                  name="nilaitaksir"
-                  required="nilaitaksir"></ion-input>
+                  placeholder="Number Phone"
+                  name="numberphone"
+                  required="numberphone"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-label position="floating">Biaya (Max)</ion-label>
-      <ion-input  placeholder="Biaya (Max)"
-                  name="biayamas"
-                  required="biayamax"
-                  type="number"
-                  ngModel number></ion-input>
+      <ion-label position="floating">Jenis Kelamin</ion-label>
+      <ion-select  interface="popover" placeholder="-- Pilih --">
+        <ion-select-option value="jenkel1">Laki-Laki</ion-select-option>
+        <ion-select-option value="jenkel2">Perempuan</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </div>
+
+  <div class="upperBox">
+    <ion-row>
+      <ion-item lines="none">
+        <h3>Alamat Domisili Nasabah</h3>
+      </ion-item>
+    </ion-row>
+
+    <ion-item>
+      <ion-label position="floating">Alamat Lengkap</ion-label>
+      <ion-input  type="alamat"
+                  placeholder="alamat"
+                  name="alamat"
+                  required="alamat"></ion-input>
+      <!-- <ion-note slot="error">Invalid text</ion-note> -->
     </ion-item>
 
     <ion-item>
-      <ion-label position="floating">Pemeliharaan</ion-label>
-      <ion-input  type="text"
-                  placeholder="Pemeliharaan"
-                  name="pemeliharaan"
-                  required="pemeliharaan"></ion-input>
+      <ion-label position="floating">Provinsi</ion-label>
+      <ion-select  interface="popover" placeholder="-- Pilih --">
+        <ion-select-option value="provinsi1">1 Tahun</ion-select-option>
+        <ion-select-option value="provinsi2">2 Tahun</ion-select-option>
+        <ion-select-option value="provinsi3">3 Tahun</ion-select-option>
+        <ion-select-option value="provinsi4">4 Tahun</ion-select-option>
+        <ion-select-option value="provinsi5">5 Tahun</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Kabupaten / Kota</ion-label>
+      <ion-select  interface="popover" placeholder="-- Pilih --">
+        <ion-select-option value="jwaktu1">1 Tahun</ion-select-option>
+        <ion-select-option value="jwaktu2">2 Tahun</ion-select-option>
+        <ion-select-option value="jwaktu3">3 Tahun</ion-select-option>
+        <ion-select-option value="jwaktu4">4 Tahun</ion-select-option>
+        <ion-select-option value="jwaktu5">5 Tahun</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Kantor Cabang</ion-label>
+      <ion-select  interface="popover" placeholder="-- Pilih --">
+        <ion-select-option value="jwaktu1">1 Tahun</ion-select-option>
+        <ion-select-option value="jwaktu2">2 Tahun</ion-select-option>
+        <ion-select-option value="jwaktu3">3 Tahun</ion-select-option>
+        <ion-select-option value="jwaktu4">4 Tahun</ion-select-option>
+        <ion-select-option value="jwaktu5">5 Tahun</ion-select-option>
+      </ion-select>
     </ion-item>
   </div>
 
   <div class="upperBox">
     <ion-row>
       <ion-col>
-        <ion-button class="button" expand="block">Referralkan</ion-button>
+        <ion-button class="button" expand="block">
+          <ion-icon name="checkmark-outline"></ion-icon>
+          Simpan</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button class="button" expand="block">Batal</ion-button>
+        <ion-button class="button" expand="block">
+          <ion-icon name="close-outline"></ion-icon>
+          Batal</ion-button>
       </ion-col>
     </ion-row>
   </div>

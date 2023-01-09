@@ -25,31 +25,36 @@ export class Tab1Page implements OnInit {
         id: 1,
         label: 'Haji',
         image: '../../assets/icon-kategori/icon-haji.png',
-        active: true,
+        active: false,
+        path: '/',
       },
       {
         id: 2,
         label: 'Umrah',
         image: '../../assets/icon-kategori/icon-umrah.png',
         active: false,
+        path: '/',
       },
       {
         id: 3,
         label: 'Qurban',
         image: '../../assets/icon-kategori/icon-qurban2.png',
         active: false,
+        path: '/',
       },
       {
         id: 4,
         label: 'Cicil Emas',
         image: '../../assets/icon-kategori/cicil-emas.png',
         active: false,
+        path: 'tab1/cicilemas',
       },
       {
         id: 5,
         label: 'Gadai Emas',
         image: '../../assets/icon-kategori/gadai-emas4.png',
         active: false,
+        path: 'gadaiemas',
       },
     ]
   }
