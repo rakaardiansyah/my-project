@@ -1,12 +1,13 @@
 <ion-header>
   <ion-toolbar color="primary">
     <ion-buttons slot="start">
-      <ion-back-button color="light"
-      defaultHref="search-chef"></ion-back-button>
+      <ion-back-button defaultHref="tab4"></ion-back-button>
     </ion-buttons>
     <ion-title>Fee Referral</ion-title>
+    <!-- <ion-icon name="filter-outline" slot="end"></ion-icon> -->
   </ion-toolbar>
 </ion-header>
+
 
 <ion-content>
 
@@ -26,29 +27,70 @@
 
       <ion-row>
         <ion-col width-40>
-          <ion-select interface="popover" placeholder="Select One">
+          <ion-select interface="popover" placeholder="Status">
             <ion-select-option value="Proses">Proses</ion-select-option>
             <ion-select-option value="BelumBayar">Belum Bayar</ion-select-option>
             <ion-select-option value="Batal">Batal</ion-select-option>
           </ion-select>
         </ion-col>
         <ion-col width-40>
-          <ion-select interface="popover" placeholder="Select One">
+          <ion-select interface="popover" placeholder="Product">
             <ion-select-option value="Haji">Haji</ion-select-option>
             <ion-select-option value="Umrah">Umrah</ion-select-option>
             <ion-select-option value="Qurban">Qurban</ion-select-option>
           </ion-select>
         </ion-col>
         <ion-col width-40>
-          <ion-select  interface="popover" placeholder="Select One">
-            <ion-select-option value="Week1">Week 1</ion-select-option>
-            <ion-select-option value="Week2">Week 2</ion-select-option>
-            <ion-select-option value="Week3">Week 3</ion-select-option>
-          </ion-select>
+          <ion-input  type="date" placeholder="Tanggal" name="tanggal" required="tanggal"></ion-input>
         </ion-col>
       </ion-row>
     </div>
 
+  </ion-card>
+
+  <ion-card>
+    <div class="headerTgl">
+      <ion-card-title>Rabu, 24 Nov 2022</ion-card-title>
+    </div>
+
+    <ion-item lines="none">
+      <ion-row>
+        <ion-col width-80>
+          <ion-card-subtitle>
+            Umrah Bersama Ustadz Maman Suherman
+          </ion-card-subtitle>
+        </ion-col>
+        <ion-col width-40>
+          <ion-card-title>+ Rp600.000</ion-card-title>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-row>
+        <ion-col width-80>
+          <ion-card-subtitle>
+            Pencairan Fee Referral
+          </ion-card-subtitle>
+        </ion-col>
+        <ion-col width-40>
+          <ion-card-title>+ Rp600.000</ion-card-title>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-row>
+        <ion-col width-80>
+          <ion-card-subtitle>
+            Pembatalan Umrah Umrah plus Dubai 11D Chef Muna Sukarna
+          </ion-card-subtitle>
+        </ion-col>
+        <ion-col width-40>
+          <ion-card-title>+ Rp600.000</ion-card-title>
+        </ion-col>
+      </ion-row>
+    </ion-item>
   </ion-card>
 
   <ion-card>
@@ -96,7 +138,6 @@
     </ion-item>
   </ion-card>
 
-
   <ion-card>
     <div class="headerTgl">
       <ion-card-title>Selasa, 22 Nov 2022</ion-card-title>
@@ -106,7 +147,7 @@
       <ion-row>
         <ion-col width-80>
           <ion-card-subtitle>
-            Umrah Bersama Ustadz Kondang 9D Maman Suherman
+            Umrah Bersama Ustadz Suherman
           </ion-card-subtitle>
         </ion-col>
         <ion-col width-40>
