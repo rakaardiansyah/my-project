@@ -33,16 +33,7 @@ ion-chip {
 }
 
 ion-col{
-    justify-content: center;
-    display: flex;
-    .titleFilter{
-        --background: var(--ion-color-primary);
-        font-size: 20px;
-        font-weight: bold;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-    }
+
 }
 
 ion-header {
@@ -72,6 +63,15 @@ ion-content{
         .topFilters{
             background-color: #fff ;
             padding: 15px 8px;
+
+            .titleFilter{
+                --background: var(--ion-color-primary);
+                font-size: 20px;
+                font-weight: bold;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+            }
 
             .image{
                 width: 110px;
