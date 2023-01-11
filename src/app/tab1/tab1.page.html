@@ -21,6 +21,7 @@
     </ion-item>
   </ion-list>
   <div class="popover">
+    <!-- CATEGORI -->
     <ion-card class="categories">
       <app-category-item *ngFor="let item of categories" [item]="item"></app-category-item>
     </ion-card>
@@ -30,57 +31,74 @@
 
 <ion-content>
 
-   <!-- PROMO -->
-   <h1 class="list-promo">Promo Paket!</h1>
-
-   <!-- PAKET TERBARU -->
-   <h1 class="lis-terbaru"></h1>
-
-   <!-- PAKET TERLARIS -->
-   <h1 class="list-terlaris"></h1>
-
-
-  <!-- CATEGORIES1 -->
-  <!-- <ion-card>
+  <!-- PROMO -->
+  <ion-grid class="ion-margin-top">
+    <ion-item lines="none">
+      <ion-label class="title">Promo Paket!</ion-label>
+      <ion-button slot="end" size="small" shape="round" color="primary">View All</ion-button>
+    </ion-item>
     <ion-row>
-      <div class="item-categories ion-align-items-center ion-justify-content-center">
-        <div class="image-card">
-          <ion-img src="../../assets/icon-kategori/icon-haji.png"></ion-img>
-        </div>
-        <p class="ion-no-margin">Haji</p>
-      </div>
-      <div class="item-categories ion-align-items-center ion-justify-content-center">
-        <div class="image-card">
-          <ion-img src="../../assets/icon-kategori/icon-umrah.png"></ion-img>
-        </div>
-        <p class="ion-no-margin">Umrah</p>
-      </div>
-      <div class="item-categories ion-align-items-center ion-justify-content-center">
-        <div class="image-card">
-          <ion-img src="../../assets/icon-kategori/icon-qurban2.png"></ion-img>
-        </div>
-        <p class="ion-no-margin">Qurban</p>
-      </div>
-      <div class="item-categories ion-align-items-center ion-justify-content-center" (click)="gadaiEmas()">
-        <div class="image-card">
-          <ion-img src="../../assets/icon-kategori/cicil-emas.png"></ion-img>
-        </div>
-        <p class="ion-no-margin">Cicil Emas</p>
-      </div>
-      <div class="item-categories ion-align-items-center ion-justify-content-center">
-        <div class="image-card">
-          <ion-img src="../../assets/icon-kategori/gadai-emas4.png" (click)="cicilEmas()"></ion-img>
-        </div>
-        <p class="ion-no-margin">Gadai Emas</p>
-      </div>
+      <ion-slides [options]="slideOpts">
+        <ion-slide *ngFor="let item of promoItems">
+          <ion-card class="bgCard" [routerLink]="['/','tabs','items', item.id]">
+            <ion-card-header>
+              <img [src]="item?.img" />
+            </ion-card-header>
+            <ion-card-content>
+              <ion-item lines="none">
+                <ion-label>
+                  {{item?.name}}
+                  <p><ion-text color="tertiary">{{item?.category}}</ion-text></p>
+                </ion-label>
+                <ion-text class="price" slot="end" color="primary"><b>Rp{{item?.price}}</b></ion-text>
+              </ion-item>
+            </ion-card-content>
+          </ion-card>
+        </ion-slide>
+      </ion-slides>
     </ion-row>
-  </ion-card> -->
+  </ion-grid>
 
-  <!-- CATEGORIES2 -->
+  <!-- PAKET TERBARU -->
+  <h1 class="lis-terbaru"></h1>
+
+  <!-- PAKET TERLARIS -->
+  <h1 class="list-terlaris"></h1>
+
+  <!-- CATEGORIES1 TIDAK DI PAKAI-->
   <!-- <ion-card>
-    <div class="categories">
-      <app-category-item *ngFor="let item of categories" [item]="item"></app-category-item>
-    </div>
-  </ion-card> -->
+        <ion-row>
+          <div class="item-categories ion-align-items-center ion-justify-content-center">
+            <div class="image-card">
+              <ion-img src="../../assets/icon-kategori/icon-haji.png"></ion-img>
+            </div>
+            <p class="ion-no-margin">Haji</p>
+          </div>
+          <div class="item-categories ion-align-items-center ion-justify-content-center">
+            <div class="image-card">
+              <ion-img src="../../assets/icon-kategori/icon-umrah.png"></ion-img>
+            </div>
+            <p class="ion-no-margin">Umrah</p>
+          </div>
+          <div class="item-categories ion-align-items-center ion-justify-content-center">
+            <div class="image-card">
+              <ion-img src="../../assets/icon-kategori/icon-qurban2.png"></ion-img>
+            </div>
+            <p class="ion-no-margin">Qurban</p>
+          </div>
+          <div class="item-categories ion-align-items-center ion-justify-content-center" (click)="gadaiEmas()">
+            <div class="image-card">
+              <ion-img src="../../assets/icon-kategori/cicil-emas.png"></ion-img>
+            </div>
+            <p class="ion-no-margin">Cicil Emas</p>
+          </div>
+          <div class="item-categories ion-align-items-center ion-justify-content-center">
+            <div class="image-card">
+              <ion-img src="../../assets/icon-kategori/gadai-emas4.png" (click)="cicilEmas()"></ion-img>
+            </div>
+            <p class="ion-no-margin">Gadai Emas</p>
+          </div>
+        </ion-row>
+      </ion-card> -->
 
 </ion-content>

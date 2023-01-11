@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Category } from 'src/app/tab1/category-item/models/category.models';
 import { Router } from '@angular/router';
+import { PromoItemService } from 'src/app/tab1/promo-item/services/promo-item.service';
 
 @Component({
   selector: 'app-tab1',
@@ -9,14 +10,26 @@ import { Router } from '@angular/router';
 })
 export class Tab1Page implements OnInit {
 
+  //KATEGORI
   categories: Category[] = [];
 
+  //ITEM PROMO
+  slideOpts = {
+    slidesPerView: 2.2,
+  };
+  slideOpts1 = {
+    slidePerView: 1.3,
+  };
+  promoItems: any[] = [];
+  featuredItems: any[] = [];
+
   constructor(
-    public router : Router
-  ) { }
+    public router: Router,
+    public promoItemService: PromoItemService) { }
 
   ngOnInit() {
     this.getCategories();
+    this.promoItems = this.promoItemService.items;
   }
 
   getCategories() {
