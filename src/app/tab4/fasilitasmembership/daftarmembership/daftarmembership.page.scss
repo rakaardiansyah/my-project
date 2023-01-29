@@ -5,44 +5,56 @@ ion-toolbar {
     font-size: 20px
 }
 
-ion-title {
-    font-size: 18px;
-}
-
-ion-chip {
-    margin-left: 0;
-}
-
-ion-label {
-    font-size: 12px;
-}
-
-ion-col {
-    text-align: center;
-    align-items: center;
-}
-
-ion-content {
-    font-family: 'Poppins', sans-serif;
+ion-content{
     --background: #f0f0f2;
 
-    .layoutBg {
-        background-color: #fff;
-        height: auto;
-        padding: 12px 10px;
+    .upperBox{
+        background-color: #fff ;
+        padding: 5px 10px;
 
-        ion-label {
-            font-size: 14px;
+        .titleFasilitas{
+            font-size: 16px;
+            margin: 15px 0px;
+            font-weight: bold;
+            justify-content: left;
+            display: flex;
         }
 
-        .descBg {
-            background-color: #fff;
-            height: auto;
-            padding: 12px 10px;
+        .bgOptions{
+            margin: 5px 0px;
 
-            ion-label {
-
+            ion-card{
+                width: 315px;
+                height: 150px;
+                justify-content: center;
+                display: flex;
             }
+        }
+
+        .bgCondition{
+            margin: 0px 0px;
+
+            ion-card{
+                width: 315px;
+                height: 150px;
+                justify-content: center;
+                display: flex;
+            }
+        }
+
+        .bgButton{
+            margin: 20px 0px;
+
+            ion-button {
+                border-radius: 20px;
+                font-size: 14px;
+                // --border-radius: 15px;
+            }
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--ion-color-primary);
+            font-weight: bold;
         }
     }
 }

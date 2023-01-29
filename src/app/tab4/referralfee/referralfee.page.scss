@@ -1,8 +1,70 @@
-ion-toolbar {
-    width: 100%;
+ion-header {
     --background: var(--ion-color-primary);
     color: #fff;
-    font-size: 20px
+
+    ion-icon {
+        font-size: 30px;
+        position: relative;
+        margin-right: 10px;
+    }
+
+    #filter-outline{
+        position: absolute;
+        top: 5px;
+        right: 25px;
+        color:#fff;
+        z-index: 111;
+    }
+
+    ion-toolbar {
+        width: 100%;
+        --background: var(--ion-color-primary);
+        color: #fff;
+        font-size: 15px
+    }
+
+    .topFilters{
+        background-color: #fff;
+        padding: 2px 4px;
+
+        .titleStatus{
+            font-size: 13px;
+            text-align: center;
+        }
+
+        .titleProduct{
+            font-size: 13px;
+            text-align: center;
+        }
+        .titleDate{
+            font-size: 13px;
+            text-align: center;
+        }
+    }
+
+    .outStanding{
+        background-color: #fff ;
+        padding: 8px 10px;
+
+        .titleOutstanding{
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .titleName{
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .descOut{
+            font-size: 11px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--ion-color-primary);
+            font-weight: bold;
+        }
+    }
 }
 
 ion-title {
@@ -37,93 +99,38 @@ ion-col {
     text-align: left;
 }
 
-ion-header {
-    --background: var(--ion-color-primary);
-    color: #fff;
-    ion-icon {
-        font-size: 30px;
-        position: relative;
-        margin-right: 10px;
-    }
-    #filter-outline{
-        position: absolute;
-        top: 5px;
-        right: 25px;
-        color:#fff;
-        z-index: 111;
-    }
-}
-
 ion-content{
     font-family: 'Poppins', sans-serif;
     --background: #f0f0f2;
 
     ion-card{
-        margin: 10px;
+        margin: 10px 8px;
+        border-radius: 5px;
 
-        .topFilters{
-            background-color: #fff ;
-            padding: 15px 8px;
+        .headerTgl{
+            font-weight: bold;
+            text-align: left;
+            font-size: 16px;
+            padding: 10px;
+            color: #262626;
+            background-color: var(--ion-color-secondary);
 
-            .titleFilter{
-                --background: var(--ion-color-primary);
-                font-size: 20px;
-                font-weight: bold;
-                align-items: center;
-                justify-content: center;
-                display: flex;
-            }
-
-            .image{
-                width: 110px;
-                height: 110px;
-                margin-right: 10px;
-                color:var(--ion-color-primary);
-            }
-            .titleName{
-                font-weight: bold;
-                font-size: 18px;
-                margin: 2px;
-            }
-            .titleEmail{
-                font-size: 18px;
-                margin: 2px;
-            }
-            .titleTelp{
-                font-size: 18px;
-                margin: 2px;
-            }
-
-            h1, h2, h3, h4, h5, h6 {
-                color: var(--ion-color-primary);
-                font-weight: bold;
+            ion-text{
+                margin-left: 12px;
             }
         }
-    }
-}
 
-.container {
-    padding: 6px 20px;
-    color: #ffffff;
-}
+        .titleReferral{
+            margin: 2px;
+            text-align: left;
+            font-size: 14px;
+        }
 
-.headerTgl{
-    text-align: center;
-    background-color: var(--ion-color-secondary);
-    padding: 10px;
-
-    .titlePayment{
-        font-size: 20px;
-        font-weight: bold;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-    }
-
-    .descPayment{
-        font-size: 15px;
-        align-items: center;
-        justify-content: center;
-        display: flex;
+        .descReferral{
+            margin: 2px;
+            font-weight: bold;
+            text-align: left;
+            font-size: 17px;
+        }
     }
 }

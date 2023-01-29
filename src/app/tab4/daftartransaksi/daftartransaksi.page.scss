@@ -1,8 +1,50 @@
-ion-toolbar {
-    width: 100%;
+ion-header {
     --background: var(--ion-color-primary);
-    color: #fff;
-    font-size: 20px;
+    ion-icon {
+        font-size: 30px;
+        position: relative;
+        margin-right: 10px;
+    }
+    #filter-outline{
+        position: absolute;
+        top: 5px;
+        right: 25px;
+        color:#fff;
+        z-index: 111;
+    }
+
+    ion-toolbar {
+        width: 100%;
+        --background: var(--ion-color-primary);
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .topFilters{
+        background-color: #fff;
+        padding: 4px 5px;
+
+        .titleFilter {
+            color: black;
+            font-size: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .titleStatus{
+            font-size: 13px;
+            text-align: center;
+        }
+
+        .titleProduct{
+            font-size: 13px;
+            text-align: center;
+        }
+        .titleDate{
+            font-size: 13px;
+            text-align: center;
+        }
+    }
 }
 
 ion-title {
@@ -24,108 +66,246 @@ ion-card-subtitle{
     margin: 10px;
 }
 
-ion-label{
-    margin-left: 0;
-}
-
-ion-chip {
-    margin-left: 0;
-}
-
 ion-col{
     justify-content: center;
     display: flex;
-    .titleFilter{
-        --background: var(--ion-color-primary);
-        font-size: 20px;
-        font-weight: bold;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-    }
-}
-
-ion-header {
-    --background: var(--ion-color-primary);
-    color: #fff;
-    ion-icon {
-        font-size: 30px;
-        position: relative;
-        margin-right: 10px;
-    }
-    #filter-outline{
-        position: absolute;
-        top: 5px;
-        right: 25px;
-        color:#fff;
-        z-index: 111;
-    }
+    margin: 0px 0px;
 }
 
 ion-content{
     font-family: 'Poppins', sans-serif;
     --background: #f0f0f2;
 
-    ion-card{
-        margin: 10px;
+    .cardUmrah {
+        padding: 0px 0px;
+        text-align: left;
 
-        .topFilters{
-            background-color: #fff;
-            padding: 15px 8px;
+        .image-umrah {
+            width: 100%;
+            margin: 10px;
+            justify-content: left;
+            display: flex;
+        }
 
-            .image{
-                width: 110px;
-                height: 110px;
-                margin-right: 10px;
-                color:var(--ion-color-primary);
-            }
+        .title-umrah {
+            width: 170px;
+            font-size: 17px;
+            text-align: left;
+            font-weight: bold;
+            justify-content: left;
+            display: flex;
+            color: var(--ion-color-primary);
+        }
 
-            .titleName{
+        .title-umrah2 {
+            width: 170px;
+            font-size: 12px;
+            text-align: left;
+        }
+
+        .titleUmrah {
+            font-size: 16px;
+            text-align: left;
+            font-weight: bold;
+            justify-content: left;
+        }
+
+        .descUmrah {
+            font-size: 12px;
+            text-align: left;
+            justify-content: left;
+        }
+
+        .priceUmrah {
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--ion-color-primary);
+        }
+
+        .footUmrah {
+            text-align: center;
+            background-color: var(--ion-color-primary);
+            padding: 10px;
+
+            .titlepayUmrah {
+                font-size: 16px;
                 font-weight: bold;
-                font-size: 18px;
-                margin: 2px;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                color: white;
             }
 
-            .titleEmail{
-                font-size: 18px;
-                margin: 2px;
-            }
-
-            .titleTelp{
-                font-size: 18px;
-                margin: 2px;
-            }
-
-            h1, h2, h3, h4, h5, h6 {
-                color: var(--ion-color-primary);
-                font-weight: bold;
+            .descpayUmrah {
+                font-size: 12px;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                color: white;
             }
         }
-    }
-}
 
-.container {
-    padding: 6px 20px;
-    color: #ffffff;
-}
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: var(--ion-color-primary);
+            font-weight: bold;
+        }
 
-.footer{
-    text-align: center;
-    background-color: var(--ion-color-secondary);
-    padding: 10px;
 
-    .titlePayment{
-        font-size: 20px;
-        font-weight: bold;
-        align-items: center;
-        justify-content: center;
-        display: flex;
     }
 
-    .descPayment{
-        font-size: 15px;
-        align-items: center;
-        justify-content: center;
-        display: flex;
+    .cardHaji {
+        text-align: left;
+        padding: 0px 0px;
+
+        .image-haji{
+            width: 100%;
+            margin: 10px;
+            justify-content: left;
+            display: flex;
+        }
+
+        .title-haji {
+            width: 170px;
+            font-size: 17px;
+            text-align: left;
+            font-weight: bold;
+            justify-content: left;
+            display: flex;
+            color:var(--ion-color-primary);
+        }
+
+        .title-haji2{
+            width: 170px;
+            font-size: 12px;
+            text-align: left;
+        }
+
+        .titleHaji {
+            font-size: 16px;
+            text-align: left;
+            font-weight: bold;
+            justify-content: left;
+        }
+
+        .descHaji {
+            font-size: 12px;
+            text-align: left;
+            justify-content: left;
+        }
+
+        .priceHaji{
+            font-size: 18px;
+            font-weight: bold;
+            color:var(--ion-color-primary);
+        }
+
+        .footHaji{
+            text-align: center;
+            background-color: var(--ion-color-secondary);
+            padding: 10px;
+
+            .titlepayHaji{
+                font-size: 16px;
+                font-weight: bold;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                color: white;
+            }
+
+            .descpayHaji{
+                font-size: 12px;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                color: white;
+            }
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--ion-color-primary);
+            font-weight: bold;
+        }
+
+
+    }
+
+    .cardQurban {
+        text-align: left;
+        padding: 0px 0px;
+
+        .image-qurban{
+            width: 100%;
+            margin: 10px;
+            justify-content: left;
+            display: flex;
+        }
+
+        .title-qurban {
+            width: 170px;
+            font-size: 17px;
+            text-align: left;
+            font-weight: bold;
+            justify-content: left;
+            display: flex;
+            color:var(--ion-color-primary);
+        }
+
+        .title-qurban2{
+            width: 170px;
+            font-size: 12px;
+            text-align: left;
+        }
+
+        .titleQurban {
+            font-size: 16px;
+            text-align: left;
+            font-weight: bold;
+            justify-content: left;
+        }
+
+        .descQurban {
+            font-size: 12px;
+            text-align: left;
+            justify-content: left;
+        }
+
+        .priceQurban{
+            font-size: 18px;
+            font-weight: bold;
+            color:var(--ion-color-primary);
+        }
+
+        .footQurban{
+            text-align: center;
+            background-color: var(--ion-color-secondary);
+            padding: 10px;
+
+            .titlepayQurban{
+                font-size: 16px;
+                font-weight: bold;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                color: white;
+            }
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--ion-color-primary);
+            font-weight: bold;
+        }
+
+
+    }
+
+    .container {
+        padding: 6px 20px;
+        color: #ffffff;
     }
 }
