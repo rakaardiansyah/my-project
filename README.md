@@ -7,5 +7,5 @@ Hi, I’m @rakaardiansyah
 📫 How to reach me on website https://rakaardiansyah.my.id and IG @infogtech.id
 
 
-[Screenshot]
+![Screenshot]
 (https://github.com/rakaardiansyah/my-project/blob/master/src/assets/Screen-Shot.png)
