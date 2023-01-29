@@ -5,3 +5,7 @@ Hi, I’m @rakaardiansyah
 🌱 I’m currently working in an IT company as a Programmer and UI/UX Designer
 💞️ I have also written a Tutorial Blog >> https://infogabut.blogspot.co.id
 📫 How to reach me on website https://rakaardiansyah.my.id and IG @infogtech.id
+
+
+[Screenshot]
+(https://github.com/rakaardiansyah/my-project/blob/master/src/assets/Screen-Shot.png)
